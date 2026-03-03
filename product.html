@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review | Smart Living Hub</title>
+  <meta name="description" content="In-depth product review with pros, cons, ratings and comparison.">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body data-page="product">
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="container">
+        <div class="nav-inner">
+          <a href="index.html" class="nav-logo" aria-label="Smart Living Hub home">
+            <div class="logo-icon" aria-hidden="true">⚡</div>
+            Smart<span>Living</span>Hub
+          </a>
+          <ul class="nav-links" role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="category.html?cat=home-essentials">Home Essentials</a></li>
+            <li><a href="category.html?cat=smart-gadgets">Smart Gadgets</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+          <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- BREADCRUMB -->
+  <div style="background:var(--surface);border-bottom:1px solid var(--border);padding:14px 0;">
+    <div class="container">
+      <nav aria-label="Breadcrumb">
+        <ol style="display:flex;gap:8px;font-size:0.8rem;color:var(--text-muted);list-style:none;flex-wrap:wrap;">
+          <li><a href="index.html" style="color:var(--text-muted);transition:color 0.2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-muted)'">Home</a></li>
+          <li aria-hidden="true" style="color:var(--border)">›</li>
+          <li><a href="category.html" style="color:var(--text-muted);transition:color 0.2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-muted)'">Products</a></li>
+          <li aria-hidden="true" style="color:var(--border)">›</li>
+          <li aria-current="page" style="color:var(--text-secondary)" id="breadcrumb-name">Product Review</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+  <main>
+    <section class="section">
+      <div class="container">
+
+        <!-- Disclosure -->
+        <div class="disclosure-banner" role="note" style="margin-bottom:32px;">
+          <strong>Affiliate Disclosure:</strong> Links below are affiliate links. We earn a small commission from qualifying purchases at no extra cost to you.
+        </div>
+
+        <!-- Product detail injected here -->
+        <div id="product-detail-container" aria-live="polite">
+          <!-- Rendered by JS -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- RELATED PRODUCTS PLACEHOLDER -->
+    <section class="section" style="background:var(--surface);">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">More Picks</span>
+          <h2>You Might Also Like</h2>
+        </div>
+        <div style="text-align:center;padding:40px;">
+          <a href="category.html" class="btn btn-primary">Browse All Products →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <div class="logo-icon" aria-hidden="true">⚡</div>
+            Smart<span>Living</span>Hub
+          </a>
+          <p>Your trusted guide to smart home essentials and tech gadgets.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <a href="category.html?cat=home-essentials">Home Essentials</a>
+          <a href="category.html?cat=smart-gadgets">Smart Gadgets</a>
+          <a href="blog.html">Blog & Guides</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="index.html#affiliate">Affiliate Disclosure</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-disclosure">
+          <strong>Affiliate Disclosure:</strong> Smart Living Hub earns commissions from qualifying Amazon purchases. All recommendations are based on genuine research.
+        </p>
+        <p class="footer-copy">© 2026 Smart Living Hub.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOAT -->
+  <a href="https://wa.me/254728327873?text=Hello!%20I%20have%20a%20question." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span>Chat on WhatsApp</span>
+  </a>
+
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+
+  <script>
+    // Update breadcrumb after page loads
+    window.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get('id');
+      if (id) {
+        fetch('data/products.json')
+          .then(r => r.json())
+          .then(products => {
+            const p = products.find(x => x.id == id);
+            if (p) {
+              const el = document.getElementById('breadcrumb-name');
+              if (el) el.textContent = p.name;
+              document.title = p.name + ' Review | Smart Living Hub';
+            }
+          }).catch(() => {});
+      }
+    });
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>
