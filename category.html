@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse Products | Smart Living Hub</title>
+  <meta name="description" content="Browse all Smart Living Hub product reviews — home essentials and smart gadgets, filtered and searchable.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://kipdun7-ux.github.io/smart-living-hub/category.html">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body data-page="category">
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="container">
+        <div class="nav-inner">
+          <a href="index.html" class="nav-logo" aria-label="Smart Living Hub home">
+            <div class="logo-icon" aria-hidden="true">⚡</div>
+            Smart<span>Living</span>Hub
+          </a>
+          <ul class="nav-links" role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="category.html?cat=home-essentials">Home Essentials</a></li>
+            <li><a href="category.html?cat=smart-gadgets">Smart Gadgets</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+          <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Browse</span>
+        <h1 id="category-title">All Products</h1>
+        <p id="category-desc" style="color:var(--text-secondary);font-size:1rem;margin-top:8px;">
+          Curated home essentials and smart gadgets, reviewed by experts.
+        </p>
+      </div>
+    </section>
+
+    <!-- PRODUCT LISTING -->
+    <section class="section">
+      <div class="container">
+
+        <!-- Disclosure -->
+        <div class="disclosure-banner" role="note">
+          <strong>Affiliate Disclosure:</strong> We earn commissions from qualifying Amazon purchases at no extra cost to you.
+        </div>
+
+        <!-- Filter bar -->
+        <div class="filter-bar" role="group" aria-label="Product filters">
+          <button class="filter-btn active" data-cat="all" aria-pressed="true">All Products</button>
+          <button class="filter-btn" data-cat="home-essentials" aria-pressed="false">🏠 Home Essentials</button>
+          <button class="filter-btn" data-cat="smart-gadgets" aria-pressed="false">⚡ Smart Gadgets</button>
+          <div class="search-wrap">
+            <label for="search-input" class="sr-only">Search products</label>
+            <input type="search" id="search-input" placeholder="Search products..." autocomplete="off" aria-label="Search products">
+          </div>
+        </div>
+
+        <!-- Product grid -->
+        <div id="product-container" class="products-grid" aria-label="Product listing" aria-live="polite">
+          <!-- Injected by JS -->
+        </div>
+
+        <!-- No results -->
+        <div id="no-results" role="alert">
+          <p style="font-size:1.5rem;margin-bottom:12px;">🔍</p>
+          <h3>No products found</h3>
+          <p style="color:var(--text-muted);margin-top:8px;">Try a different filter or search term.</p>
+        </div>
+
+        <!-- Load more -->
+        <div id="load-more-wrap">
+          <button id="load-more-btn" class="btn btn-ghost" style="display:none;">Load More</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- EMAIL CAPTURE -->
+    <section class="section-sm">
+      <div class="container">
+        <div class="email-capture">
+          <span class="eyebrow">Newsletter</span>
+          <h2>Never Miss a Deal</h2>
+          <p>Join 15K+ readers getting weekly expert picks and exclusive deals.</p>
+          <form class="email-form" id="email-form" novalidate aria-label="Newsletter signup">
+            <label for="email-input" class="sr-only">Email address</label>
+            <input type="email" id="email-input" placeholder="Enter your email" required autocomplete="email">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+          <p class="email-note">✓ No spam, unsubscribe anytime.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <div class="logo-icon" aria-hidden="true">⚡</div>
+            Smart<span>Living</span>Hub
+          </a>
+          <p>Your trusted guide to smart home essentials and tech gadgets.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <a href="category.html?cat=home-essentials">Home Essentials</a>
+          <a href="category.html?cat=smart-gadgets">Smart Gadgets</a>
+          <a href="blog.html">Blog & Guides</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="index.html#affiliate">Affiliate Disclosure</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-disclosure">
+          <strong>Affiliate Disclosure:</strong> Smart Living Hub earns commissions from qualifying Amazon purchases. Recommendations are based on genuine research.
+        </p>
+        <p class="footer-copy">© 2026 Smart Living Hub.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOAT -->
+  <a href="https://wa.me/254728327873?text=Hello!%20I%20have%20a%20question." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span>Chat on WhatsApp</span>
+  </a>
+
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+
+  <style>
+    .sr-only { position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0; }
+  </style>
+  <script src="js/main.js"></script>
+</body>
+</html>
